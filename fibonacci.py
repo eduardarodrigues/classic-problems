@@ -17,10 +17,10 @@ print(fib1(5))
 # fib(n) calls itself with the arguments n-1 and n-2 (it's 
 # recursive); you can try any n.
 
-# avoiding recursion is our responsability. Here, the recursion
+# avoiding recursion is our responsibility. Here, the recursion
 # occurs because we have not specified a base case, which is
 # pretty much like a stopping point. In this case, our base cases 
-# would be numbers 0 and 1, since non of them are the result of 
+# would be numbers 0 and 1, since none of them are the result of 
 # the sum of two previous numbers
 
 def fib2(n: int) -> int:
@@ -33,11 +33,11 @@ print(fib2(20))
 # the result will be 6765. Do not try to call fib2(40); since each 
 # call results in two more calls, the calls grow exponentially.
 # For fib2(20), 21891 calls are made (number 20 calls numbers 19 
-# and 18, and they numbers 18 and 17, and 17 and 16, respectively,
-# and it goes on)
+# and 18, and they call numbers 18 and 17, and 17 and 16, 
+# respectively, and it goes on)
 
 # a way out is to store the results in a python dictionary, 
-# instead of calculate it every time.
+# instead of calculating it every time.
 
 # memoization is basically this: an optimization technique used 
 # primarily to speed up computer programs by storing the results 
@@ -57,7 +57,7 @@ def fib3(n: int) -> int:
 print(fib3(50))
 
 # now we can easily print the fiftieth position of the sequence;
-# you can print(memo) to see what was storaged
+# you can print(memo) to see what was stored
 
 # simplifying even more, we can use a built-in decorator for 
 # memoizing literally any function. Since the decorator does the 
