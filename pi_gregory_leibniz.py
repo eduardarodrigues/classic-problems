@@ -1,8 +1,6 @@
 # Eduarda Oliveira
-
 # 2019-11-08
 # the pi number
-
 
 # the pi number is... well, you know, 3.14159265..., a constant 
 # that is the ratio of the circumference of a circle and its 
@@ -13,7 +11,6 @@
 # the most well-known way of calculating it is by using the
 # Gregory-Leibniz Series:
 # \pi = 4/1 - 4/3 + 4/5 - 4/7 + 4/9 - 4/11 + 4/13...
-
 
 def calculate_pi(terms: int) -> float:
     numerator: float = 4.0
